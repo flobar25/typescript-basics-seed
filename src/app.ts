@@ -1,5 +1,6 @@
-const pizzas = [{ name: "Pepperoni", toppings: ["pepperonis"] }];
-
-const mappedPizzas = pizzas.map(pizza => pizza.name.toUpperCase());
-
-console.log(mappedPizzas);
+function sumArray(message: string, ...arr: number[]) {
+  console.log(message);
+  console.log(arguments);
+  return arr.reduce((prev, next) => prev + next);
+}
+console.log(sumArray("test", 1, 2, 3, 4, 5, 6));
